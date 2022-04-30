@@ -9,9 +9,10 @@ let flightsCtrl = require ('../controllers/flights')
 // });
 
 router.get('/', flightsCtrl.index)
-
 router.get('/new', flightsCtrl.new);
-
+router.get('/:id', flightsCtrl.show)
 router.post('/', flightsCtrl.create);
+
+//POST /flights/:id/destinations
 
 module.exports = router;

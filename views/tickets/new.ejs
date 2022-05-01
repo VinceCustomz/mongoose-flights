@@ -3,6 +3,7 @@
     <h2>New Ticket</h2>
     <form id="add-ticket-form" method="POST" 
     action="/flights/<%= flight._id %>/tickets/new">
+    <!-- action is where it sends it to -->
     <br/>
       <label>Seat:</label>
         <input name="seat" required pattern="[A-F][1-9]\d?">

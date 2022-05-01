@@ -33,7 +33,8 @@ const flightSchema = new Schema({
         type: Date,
         default: new Date(dateOneYearLater)
     },
-    destinations: [destinationSchema]
+    destinations: [destinationSchema],
+    
     }, {
     timestamps: true
 });
